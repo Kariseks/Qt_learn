@@ -1,0 +1,17 @@
+# ninja log v6
+4	2306	1758056783071469828	core_learn_autogen/timestamp	b18ef96cd23f04db
+4	2306	1758056783071469828	core_learn_autogen/mocs_compilation.cpp	b18ef96cd23f04db
+4	2306	1758056783071469828	/home/karol/Study/Qt_learn/Brayan/core_learn/build/Desktop_Qt_6_8_2-Debug/core_learn_autogen/timestamp	b18ef96cd23f04db
+4	2306	1758056783071469828	/home/karol/Study/Qt_learn/Brayan/core_learn/build/Desktop_Qt_6_8_2-Debug/core_learn_autogen/mocs_compilation.cpp	b18ef96cd23f04db
+2308	4474	1758056783078469843	CMakeFiles/core_learn.dir/main.cpp.o	276a81a490eb4e18
+2307	4476	1758056783077703699	CMakeFiles/core_learn.dir/core_learn_autogen/mocs_compilation.cpp.o	509a2627bed4f8a5
+2308	4551	1758056783079060336	CMakeFiles/core_learn.dir/mainwindow.cpp.o	2f3828ee0a5aa7b7
+4551	4876	1758056785321474465	core_learn	ed0779985f294b6f
+3	13	1758056840733590521	core_learn_autogen/timestamp	b18ef96cd23f04db
+3	13	1758056840733590521	core_learn_autogen/mocs_compilation.cpp	b18ef96cd23f04db
+3	13	1758056840733590521	/home/karol/Study/Qt_learn/Brayan/core_learn/build/Desktop_Qt_6_8_2-Debug/core_learn_autogen/timestamp	b18ef96cd23f04db
+3	13	1758056840733590521	/home/karol/Study/Qt_learn/Brayan/core_learn/build/Desktop_Qt_6_8_2-Debug/core_learn_autogen/mocs_compilation.cpp	b18ef96cd23f04db
+14	2100	1758056840744704774	CMakeFiles/core_learn.dir/core_learn_autogen/mocs_compilation.cpp.o	509a2627bed4f8a5
+14	2113	1758056840745094646	CMakeFiles/core_learn.dir/main.cpp.o	276a81a490eb4e18
+14	2199	1758056840745277760	CMakeFiles/core_learn.dir/mainwindow.cpp.o	2f3828ee0a5aa7b7
+2199	2510	1758056842929595191	core_learn	ed0779985f294b6f
