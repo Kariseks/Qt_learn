@@ -18,6 +18,9 @@ public:
     ~MainWindow();
     void createLambda();
 
+private slots:
+    void on_horizontalScrollBar_sliderMoved(int position);
+
 private:
     Ui::MainWindow *ui;
 };

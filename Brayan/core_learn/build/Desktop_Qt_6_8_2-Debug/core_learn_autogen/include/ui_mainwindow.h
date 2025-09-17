@@ -11,8 +11,13 @@
 
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QCheckBox>
+#include <QtWidgets/QHBoxLayout>
+#include <QtWidgets/QLabel>
 #include <QtWidgets/QMainWindow>
 #include <QtWidgets/QMenuBar>
+#include <QtWidgets/QPushButton>
+#include <QtWidgets/QScrollBar>
 #include <QtWidgets/QStatusBar>
 #include <QtWidgets/QWidget>
 
@@ -22,6 +27,13 @@ class Ui_MainWindow
 {
 public:
     QWidget *centralwidget;
+    QPushButton *pushButton;
+    QPushButton *pushButton_2;
+    QCheckBox *checkBox;
+    QWidget *widget;
+    QHBoxLayout *horizontalLayout;
+    QScrollBar *horizontalScrollBar;
+    QLabel *label;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -32,6 +44,32 @@ public:
         MainWindow->resize(800, 600);
         centralwidget = new QWidget(MainWindow);
         centralwidget->setObjectName("centralwidget");
+        pushButton = new QPushButton(centralwidget);
+        pushButton->setObjectName("pushButton");
+        pushButton->setGeometry(QRect(50, 20, 88, 26));
+        pushButton_2 = new QPushButton(centralwidget);
+        pushButton_2->setObjectName("pushButton_2");
+        pushButton_2->setGeometry(QRect(200, 20, 88, 26));
+        checkBox = new QCheckBox(centralwidget);
+        checkBox->setObjectName("checkBox");
+        checkBox->setGeometry(QRect(60, 90, 92, 24));
+        widget = new QWidget(centralwidget);
+        widget->setObjectName("widget");
+        widget->setGeometry(QRect(140, 150, 261, 20));
+        horizontalLayout = new QHBoxLayout(widget);
+        horizontalLayout->setObjectName("horizontalLayout");
+        horizontalLayout->setContentsMargins(0, 0, 0, 0);
+        horizontalScrollBar = new QScrollBar(widget);
+        horizontalScrollBar->setObjectName("horizontalScrollBar");
+        horizontalScrollBar->setOrientation(Qt::Orientation::Horizontal);
+
+        horizontalLayout->addWidget(horizontalScrollBar);
+
+        label = new QLabel(widget);
+        label->setObjectName("label");
+
+        horizontalLayout->addWidget(label);
+
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName("menubar");
@@ -42,6 +80,7 @@ public:
         MainWindow->setStatusBar(statusbar);
 
         retranslateUi(MainWindow);
+        QObject::connect(horizontalScrollBar, &QScrollBar::sliderMoved, label, qOverload<int>(&QLabel::setNum));
 
         QMetaObject::connectSlotsByName(MainWindow);
     } // setupUi
@@ -49,6 +88,10 @@ public:
     void retranslateUi(QMainWindow *MainWindow)
     {
         MainWindow->setWindowTitle(QCoreApplication::translate("MainWindow", "MainWindow", nullptr));
+        pushButton->setText(QCoreApplication::translate("MainWindow", "PushButton", nullptr));
+        pushButton_2->setText(QCoreApplication::translate("MainWindow", "PushButton", nullptr));
+        checkBox->setText(QCoreApplication::translate("MainWindow", "CheckBox", nullptr));
+        label->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
     } // retranslateUi
 
 };

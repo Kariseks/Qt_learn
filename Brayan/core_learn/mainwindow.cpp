@@ -23,3 +23,9 @@ void MainWindow::createLambda()
     //lambda funcitons, that accepts params
     [](int a, int b) {qDebug() << "a+b= " << a+b << Qt::endl; } (1,2);
 }
+
+void MainWindow::on_horizontalScrollBar_sliderMoved(int position)
+{
+   // ui->label->setText()
+}
+
