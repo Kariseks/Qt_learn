@@ -29,3 +29,11 @@
 20	3332	1758144141449411343	CMakeFiles/core_learn.dir/main.cpp.o	276a81a490eb4e18
 21	3599	1758144141449651573	CMakeFiles/core_learn.dir/mainwindow.cpp.o	2f3828ee0a5aa7b7
 3599	4079	1758144145027410010	core_learn	ed0779985f294b6f
+8	41	1758232077143980216	core_learn_autogen/timestamp	b18ef96cd23f04db
+8	41	1758232077143980216	core_learn_autogen/mocs_compilation.cpp	b18ef96cd23f04db
+8	41	1758232077143980216	/home/karol/Study/Qt_learn/Brayan/core_learn/build/Desktop_Qt_6_8_2-Debug/core_learn_autogen/timestamp	b18ef96cd23f04db
+8	41	1758232077143980216	/home/karol/Study/Qt_learn/Brayan/core_learn/build/Desktop_Qt_6_8_2-Debug/core_learn_autogen/mocs_compilation.cpp	b18ef96cd23f04db
+41	3617	1758232077178554632	CMakeFiles/core_learn.dir/main.cpp.o	276a81a490eb4e18
+41	3622	1758232077176980788	CMakeFiles/core_learn.dir/core_learn_autogen/mocs_compilation.cpp.o	509a2627bed4f8a5
+42	4062	1758232077178886720	CMakeFiles/core_learn.dir/mainwindow.cpp.o	2f3828ee0a5aa7b7
+4062	4477	1758232081198050524	core_learn	ed0779985f294b6f

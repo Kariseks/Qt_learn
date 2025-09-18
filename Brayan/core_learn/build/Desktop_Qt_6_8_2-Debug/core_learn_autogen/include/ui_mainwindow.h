@@ -12,6 +12,7 @@
 #include <QtCore/QVariant>
 #include <QtWidgets/QApplication>
 #include <QtWidgets/QCheckBox>
+#include <QtWidgets/QFontComboBox>
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QMainWindow>
@@ -19,6 +20,7 @@
 #include <QtWidgets/QPushButton>
 #include <QtWidgets/QScrollBar>
 #include <QtWidgets/QStatusBar>
+#include <QtWidgets/QToolButton>
 #include <QtWidgets/QWidget>
 
 QT_BEGIN_NAMESPACE
@@ -30,10 +32,12 @@ public:
     QPushButton *pushButton;
     QPushButton *pushButton_2;
     QCheckBox *checkBox;
-    QWidget *widget;
+    QWidget *layoutWidget;
     QHBoxLayout *horizontalLayout;
     QScrollBar *horizontalScrollBar;
     QLabel *label;
+    QToolButton *toolButton;
+    QFontComboBox *fontComboBox;
     QMenuBar *menubar;
     QStatusBar *statusbar;
 
@@ -53,23 +57,29 @@ public:
         checkBox = new QCheckBox(centralwidget);
         checkBox->setObjectName("checkBox");
         checkBox->setGeometry(QRect(60, 90, 92, 24));
-        widget = new QWidget(centralwidget);
-        widget->setObjectName("widget");
-        widget->setGeometry(QRect(140, 150, 261, 20));
-        horizontalLayout = new QHBoxLayout(widget);
+        layoutWidget = new QWidget(centralwidget);
+        layoutWidget->setObjectName("layoutWidget");
+        layoutWidget->setGeometry(QRect(140, 150, 261, 20));
+        horizontalLayout = new QHBoxLayout(layoutWidget);
         horizontalLayout->setObjectName("horizontalLayout");
         horizontalLayout->setContentsMargins(0, 0, 0, 0);
-        horizontalScrollBar = new QScrollBar(widget);
+        horizontalScrollBar = new QScrollBar(layoutWidget);
         horizontalScrollBar->setObjectName("horizontalScrollBar");
         horizontalScrollBar->setOrientation(Qt::Orientation::Horizontal);
 
         horizontalLayout->addWidget(horizontalScrollBar);
 
-        label = new QLabel(widget);
+        label = new QLabel(layoutWidget);
         label->setObjectName("label");
 
         horizontalLayout->addWidget(label);
 
+        toolButton = new QToolButton(centralwidget);
+        toolButton->setObjectName("toolButton");
+        toolButton->setGeometry(QRect(610, 30, 26, 25));
+        fontComboBox = new QFontComboBox(centralwidget);
+        fontComboBox->setObjectName("fontComboBox");
+        fontComboBox->setGeometry(QRect(440, 90, 369, 26));
         MainWindow->setCentralWidget(centralwidget);
         menubar = new QMenuBar(MainWindow);
         menubar->setObjectName("menubar");
@@ -92,6 +102,7 @@ public:
         pushButton_2->setText(QCoreApplication::translate("MainWindow", "PushButton", nullptr));
         checkBox->setText(QCoreApplication::translate("MainWindow", "CheckBox", nullptr));
         label->setText(QCoreApplication::translate("MainWindow", "TextLabel", nullptr));
+        toolButton->setText(QCoreApplication::translate("MainWindow", "...", nullptr));
     } // retranslateUi
 
 };
