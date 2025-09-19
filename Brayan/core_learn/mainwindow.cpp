@@ -24,6 +24,11 @@ void MainWindow::createLambda()
     [](int a, int b) {qDebug() << "a+b= " << a+b << Qt::endl; } (1,2);
 }
 
+void MainWindow::smartPointers()
+{
+    labelKarol = std::make_unique<QLabel>(QLabel());
+}
+
 void MainWindow::on_horizontalScrollBar_sliderMoved(int position)
 {
    // ui->label->setText()

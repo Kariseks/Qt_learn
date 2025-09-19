@@ -18,10 +18,16 @@ public:
     ~MainWindow();
     void createLambda();
 
+    void smartPointers();
+
 private slots:
     void on_horizontalScrollBar_sliderMoved(int position);
 
 private:
     Ui::MainWindow *ui;
+
+
+    std::unique_ptr<QObject> labelKarol;
+    std::unique_ptr<QObject> scrollbarKarol;
 };
 #endif // MAINWINDOW_H
